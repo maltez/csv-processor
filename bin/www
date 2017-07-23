@@ -1,0 +1,8 @@
+const http = require('http');
+const app = require('../app.js');
+const config = require('../config/server.config.js');
+
+const server = http.createServer(app);
+server.listen(config.port, config.host, () => {
+    console.log(`Server started on ${config.port} on ${config.host}`);
+});

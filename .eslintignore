@@ -1,0 +1,4 @@
+build/
+mock-data/
+node_modules/
+coverage/

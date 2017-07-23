@@ -1,0 +1,36 @@
+{
+  "name": "csv-loader",
+  "version": "0.0.1",
+  "description": "Simple csv loader. With node part on koa and frontend part on react",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "debug": "node ./bin/www",
+    "start": "./node_modules/pm2/bin/pm2 start ecosystem.config.js --no-daemon",
+    "lint": "node ./node_modules/eslint/bin/eslint ./*.js ./**/*.js",
+    "lint:fix": "node ./node_modules/eslint/bin/eslint --fix ./*.js ./**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "csv",
+    "loader",
+    "express",
+    "react"
+  ],
+  "author": "Nick Lototskiy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "fast-csv": "^2.4.0",
+    "morgan": "^1.8.2",
+    "pm2": "^2.6.1",
+    "sequelize": "^4.4.2",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
